@@ -36,6 +36,7 @@ public class ContasServiceImpl extends AbsCrudService<Conta, Integer> implements
 			
 			return this.getContaRepository().findByDescricao(descricao);
 		}
+		
 		return null;
 	}
 	
