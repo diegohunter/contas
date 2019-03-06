@@ -39,8 +39,8 @@ public class RelatorioDonativoServiceImpl extends AbsPagingAndSortingService<Rel
 		
 		
 		Optional<Conta> conta1 = this.contaService.findById(1);
-		Optional<Conta> conta2 = this.contaService.findById(2);
-		Optional<Conta> conta3 = this.contaService.findById(3);
+		//Optional<Conta> conta2 = this.contaService.findById(2);
+		//Optional<Conta> conta3 = this.contaService.findById(3);
 		
 		RelatorioDonativo relatorio1 = new RelatorioDonativo();
 		relatorio1.setAno(2019);

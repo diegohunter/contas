@@ -12,6 +12,7 @@ public class RestResult {
 	private Message message;
 	private boolean success;
 	private Page<?> pagina;
+	
 	public RestResult() {
 		
 		this.result = new HashMap<String, Object>();
@@ -51,6 +52,7 @@ public class RestResult {
 			if(value.hasContent()) {
 				List<?> returnValue = value.getContent();
 				this.getResult().put(key, returnValue);
+				this.pagina = value;
 			}
 		}
 	}
@@ -62,6 +64,14 @@ public class RestResult {
 			Message msg = Message.fail(e);
 			this.setMessage(msg);
 		}
+	}
+
+	public Page<?> getPagina() {
+		return pagina;
+	}
+
+	public void setPagina(Page<?> pagina) {
+		this.pagina = pagina;
 	}
 	
 	
