@@ -14,6 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/contas-frontend",
+            "extractCss": true,
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,9 +24,43 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/vendors/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/vendors/font-awesome/css/font-awesome.min.css",
+              "src/assets/vendors/nprogress/nprogress.css",
+              "src/assets/vendors/iCheck/skins/flat/green.css",
+              "src/assets/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css",
+              "src/assets/vendors/jqvmap/dist/jqvmap.min.css",
+              "src/assets/vendors/bootstrap-daterangepicker/daterangepicker.css",
+              "src/assets/build/css/custom.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendors/jquery/dist/jquery.min.js",
+              "src/assets/vendors/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/vendors/fastclick/lib/fastclick.js",
+              "src/assets/vendors/nprogress/nprogress.js",
+              "src/assets/vendors/Chart.js/dist/Chart.min.js",
+              "src/assets/vendors/gauge.js/dist/gauge.min.js",
+              "src/assets/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js",
+              "src/assets/vendors/iCheck/icheck.min.js",
+              "src/assets/vendors/skycons/skycons.js",
+              "src/assets/vendors/Flot/jquery.flot.js",
+              "src/assets/vendors/Flot/jquery.flot.pie.js",
+              "src/assets/vendors/Flot/jquery.flot.time.js",
+              "src/assets/vendors/Flot/jquery.flot.stack.js",
+              "src/assets/vendors/Flot/jquery.flot.resize.js",
+              "src/assets/vendors/flot.orderbars/js/jquery.flot.orderBars.js",
+              "src/assets/vendors/flot-spline/js/jquery.flot.spline.min.js",
+              "src/assets/vendors/flot.curvedlines/curvedLines.js",
+              "src/assets/vendors/DateJS/build/date.js",
+              "src/assets/vendors/jqvmap/dist/jquery.vmap.js",
+              "src/assets/vendors/jqvmap/dist/maps/jquery.vmap.world.js",
+              "src/assets/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js",
+              "src/assets/vendors/moment/min/moment.min.js",
+              "src/assets/vendors/bootstrap-daterangepicker/daterangepicker.js",
+              "src/assets/build/js/custom.min.js"
+              
+            ]
           },
           "configurations": {
             "production": {
