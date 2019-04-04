@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { FrontModule } from './front/front/front.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     BaseModule,
-    //AppRouterModule
+    AppRouterModule,
+    FrontModule
   ],
   providers: [],
   bootstrap: [AppComponent]
