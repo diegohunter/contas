@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LayoutScriptsService } from 'src/app/front/front/services/layout-scripts.service';
 
 @Component({
   selector: 'app-layout-base',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutBaseComponent implements OnInit {
 
-  constructor() { }
+  constructor(private layoutScripts: LayoutScriptsService) { }
 
   ngOnInit() {
-  }
 
+    this.layoutScripts.initSidebar();
+  }
 }

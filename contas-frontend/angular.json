@@ -58,7 +58,7 @@
               "src/assets/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js",
               "src/assets/vendors/moment/min/moment.min.js",
               "src/assets/vendors/bootstrap-daterangepicker/daterangepicker.js",
-              "src/assets/build/js/custom.min.js"
+              "src/assets/build/js/custom.js"
               
             ]
           },
