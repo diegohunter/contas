@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { FrontModule } from './front/front/front.module';
+import { FrontModule } from './front/front.module';
 
 @NgModule({
   declarations: [
